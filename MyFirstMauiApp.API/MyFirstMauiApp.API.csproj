@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.4" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
@@ -19,7 +21,6 @@
     <Folder Include="Business\Services\" />
     <Folder Include="Data\Interfaces\" />
     <Folder Include="Data\Entities\" />
-    <Folder Include="Data\Connection\" />
     <Folder Include="Data\Repositories\" />
   </ItemGroup>
 

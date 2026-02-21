@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|c:\\users\\jjoaquinpa\\source\\repos\\myfirstmauiapp.api\\myfirstmauiapp.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|solutionrelative:myfirstmauiapp.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|c:\\users\\jjoaquinpa\\source\\repos\\myfirstmauiapp.api\\myfirstmauiapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|solutionrelative:myfirstmauiapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|c:\\users\\jjoaquinpa\\source\\repos\\myfirstmauiapp.api\\myfirstmauiapp.api\\myfirstmauiapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|solutionrelative:myfirstmauiapp.api\\myfirstmauiapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|c:\\users\\jjoaquinpa\\source\\repos\\myfirstmauiapp.api\\myfirstmauiapp.api\\data\\connection\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|solutionrelative:myfirstmauiapp.api\\data\\connection\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|c:\\users\\jjoaquinpa\\source\\repos\\myfirstmauiapp.api\\myfirstmauiapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|solutionrelative:myfirstmauiapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|c:\\users\\jjoaquinpa\\source\\repos\\myfirstmauiapp.api\\myfirstmauiapp.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F86EFEB-BD62-4325-A662-397C0EF33B1D}|MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj|solutionrelative:myfirstmauiapp.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "MyFirstMauiApp.API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "MyFirstMauiApp.API\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBIAAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\Program.cs",
+              "RelativeDocumentMoniker": "MyFirstMauiApp.API\\Program.cs",
+              "ToolTip": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\Program.cs",
+              "RelativeToolTip": "MyFirstMauiApp.API\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T04:23:12.315Z",
+              "WhenOpened": "2026-02-21T04:49:36.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MyFirstMauiApp.API",
-              "DocumentMoniker": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj",
-              "RelativeDocumentMoniker": "MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj",
-              "ToolTip": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj*",
-              "RelativeToolTip": "MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-21T04:21:41.729Z",
+              "Title": "DbConnectionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\Data\\Connection\\DbConnectionFactory.cs",
+              "RelativeDocumentMoniker": "MyFirstMauiApp.API\\Data\\Connection\\DbConnectionFactory.cs",
+              "ToolTip": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\Data\\Connection\\DbConnectionFactory.cs",
+              "RelativeToolTip": "MyFirstMauiApp.API\\Data\\Connection\\DbConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T04:47:35.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\appsettings.json",
+              "RelativeDocumentMoniker": "MyFirstMauiApp.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\appsettings.json",
+              "RelativeToolTip": "MyFirstMauiApp.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-21T04:43:15.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "MyFirstMauiApp.API\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\WeatherForecast.cs",
+              "RelativeToolTip": "MyFirstMauiApp.API\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T04:30:53.357Z",
               "EditorCaption": ""
             },
             {
