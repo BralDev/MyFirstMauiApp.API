@@ -14,7 +14,7 @@ namespace MyFirstMauiApp.API.Data.Connection
                 ?? throw new ArgumentNullException("La cadena de conexión no fue encontrada.");
         }
 
-        // Método que devolverá la conexión abierta o lista para abrirse
+        // Método que devolverá un instancia de conexión SQL lista para abrirse
         public IDbConnection CreateConnection()
         {
             return new SqlConnection(_connectionString);
