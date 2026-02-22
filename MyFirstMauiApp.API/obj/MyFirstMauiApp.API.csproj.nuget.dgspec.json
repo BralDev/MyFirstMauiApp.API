@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj": {}
+    "C:\\Users\\jjoaquinpa\\Source\\Repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj": {
+    "C:\\Users\\jjoaquinpa\\Source\\Repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\jjoaquinpa\\Source\\Repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj",
         "projectName": "MyFirstMauiApp.API",
-        "projectPath": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj",
+        "projectPath": "C:\\Users\\jjoaquinpa\\Source\\Repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\MyFirstMauiApp.API.csproj",
         "packagesPath": "C:\\Users\\jjoaquinpa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jjoaquinpa\\source\\repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\obj\\",
+        "outputPath": "C:\\Users\\jjoaquinpa\\Source\\Repos\\MyFirstMauiApp.API\\MyFirstMauiApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
