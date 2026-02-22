@@ -1,5 +1,9 @@
 ﻿using Dapper;
+using MyFirstMauiApp.API.Business.Interfaces;
+using MyFirstMauiApp.API.Business.Services;
 using MyFirstMauiApp.API.Data.Connection;
+using MyFirstMauiApp.API.Data.Interfaces;
+using MyFirstMauiApp.API.Data.Repositories;
 
 namespace MyFirstMauiApp.API
 {
@@ -20,6 +24,10 @@ namespace MyFirstMauiApp.API
             
             // Registro de fábrica de conexiones como Singleton (solo necesitamos una instancia en toda la app).
             builder.Services.AddSingleton<DbConnectionFactory>();
+
+            // Registrar el Repositorio y el Servicio de Producto como Scoped, lo que significa que se creará una nueva instancia por cada petición HTTP.
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IProductService, ProductService>();
 
             // Construcción de la aplicación, lo que nos da acceso a los servicios registrados y al pipeline de middleware.
             var app = builder.Build();
