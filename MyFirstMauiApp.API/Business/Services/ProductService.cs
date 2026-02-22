@@ -20,8 +20,7 @@ namespace MyFirstMauiApp.API.Business.Services
             var entities = await _repository.GetAllAsync();
 
             // Mapeamos la lista de Entidades a una lista de DTOs usando LINQ
-            return entities.Select(e => new ProductResponseDto
-            (
+            return entities.Select(e => new ProductResponseDto(
                 Id = e.Id,
                 Name = e.Name,
                 Description = e.Description,
@@ -36,8 +35,7 @@ namespace MyFirstMauiApp.API.Business.Services
             var entity = await _repository.GetByIdAsync(id);
             if (entity == null) return null;
 
-            return new ProductResponseDto
-            (
+            return new ProductResponseDto(
                 Id = entity.Id,
                 Name = entity.Name,
                 Description = entity.Description,
@@ -63,8 +61,7 @@ namespace MyFirstMauiApp.API.Business.Services
             var newId = await _repository.AddAsync(entity);
 
             // Armar la respuesta final usando el ID que nos dio la BD
-            return new ProductResponseDto
-            (
+            return new ProductResponseDto(
                 Id = newId,
                 Name = entity.Name,
                 Description = entity.Description,
@@ -89,21 +86,16 @@ namespace MyFirstMauiApp.API.Business.Services
             // Intentamos actualizar en la base de datos
             var success = await _repository.UpdateAsync(entity);
 
-            // Si devolvió falso, significa que el ID no existía
-            if (!success) return null;
-            
-            // Vamos a buscar el producto a la BD para obtener todos sus datos reales (incluyendo CreatedAt)
-            var updatedEntity = await _repository.GetByIdAsync(dto.Id);
-
-            // Mapeamos y devolvemos el objeto final al cliente
-            return new ProductResponseDto
-            (
-                Id = updatedEntity!.Id,
-                Name = updatedEntity.Name,
-                Description = updatedEntity.Description,
-                Price = updatedEntity.Price,
-                Stock = updatedEntity.Stock,
-                CreatedAt = updatedEntity.CreatedAt
+            // Si devolvió null, significa que el ID no existía
+            if (success == null) return null;
+                        
+            return new ProductResponseDto(
+                Id = success.Id,
+                Name = success.Name,
+                Description = success.Description,
+                Price = success.Price,
+                Stock = success.Stock,
+                CreatedAt = success.CreatedAt
             );
         }
 

@@ -11,7 +11,7 @@ namespace MyFirstMauiApp.API.Data.Interfaces
 
         Task<int> AddAsync(Product product);
 
-        Task<bool> UpdateAsync(Product product);
+        Task<Product?> UpdateAsync(Product product);
 
         Task<bool> DeleteAsync(int id);
     }

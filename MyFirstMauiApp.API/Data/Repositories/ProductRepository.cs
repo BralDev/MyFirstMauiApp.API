@@ -72,23 +72,27 @@ namespace MyFirstMauiApp.API.Data.Repositories
             return await connection.ExecuteScalarAsync<int>(sql, product);
         }
 
-        public async Task<bool> UpdateAsync(Product product)
+        public async Task<Product?> UpdateAsync(Product product)
         {
             using var connection = _connectionFactory.CreateConnection();
 
+            // OUTPUT INSERTED.* nos devuelve los valores reales de la fila tras el update
             var sql = @"
                 UPDATE Products 
                 SET Name = @Name, 
                     Description = @Description, 
                     Price = @Price, 
                     Stock = @Stock 
+                OUTPUT INSERTED.Id, 
+                       INSERTED.Name, 
+                       INSERTED.Description, 
+                       INSERTED.Price, 
+                       INSERTED.Stock, 
+                       INSERTED.CreatedAt
                 WHERE Id = @Id";
-
-            // ExecuteAsync devuelve el número de filas afectadas en la base de datos.
-            var rowsAffected = await connection.ExecuteAsync(sql, product);
-
-            // Si rowsAffected es mayor a 0, significa que la actualización fue exitosa.
-            return rowsAffected > 0;
+            
+            // Ejecutamos y Dapper mapea la fila retornada a un objeto Product
+            return await connection.QueryFirstOrDefaultAsync<Product>(sql, product);
         }
 
         public async Task<bool> DeleteAsync(int id)
@@ -97,7 +101,10 @@ namespace MyFirstMauiApp.API.Data.Repositories
 
             var sql = "DELETE FROM Products WHERE Id = @Id";
 
+            // ExecuteAsync devuelve el número de filas afectadas en la base de datos.
             var rowsAffected = await connection.ExecuteAsync(sql, new { Id = id });
+
+            // Si rowsAffected es mayor a 0, significa que la actualización fue exitosa.
             return rowsAffected > 0;
         }
     }
