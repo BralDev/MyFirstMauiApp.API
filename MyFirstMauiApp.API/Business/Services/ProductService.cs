@@ -21,12 +21,12 @@ namespace MyFirstMauiApp.API.Business.Services
 
             // Mapeamos la lista de Entidades a una lista de DTOs usando LINQ
             return entities.Select(e => new ProductResponseDto(
-                Id = e.Id,
-                Name = e.Name,
-                Description = e.Description,
-                Price = e.Price,
-                Stock = e.Stock,
-                CreatedAt = e.CreatedAt
+                e.Id,
+                e.Name,
+                e.Description,
+                e.Price,
+                e.Stock,
+                e.CreatedAt
             ));
         }
 
@@ -36,12 +36,12 @@ namespace MyFirstMauiApp.API.Business.Services
             if (entity == null) return null;
 
             return new ProductResponseDto(
-                Id = entity.Id,
-                Name = entity.Name,
-                Description = entity.Description,
-                Price = entity.Price,
-                Stock = entity.Stock,
-                CreatedAt = entity.CreatedAt
+                entity.Id,
+                entity.Name,
+                entity.Description,
+                entity.Price,
+                entity.Stock,
+                entity.CreatedAt
             );
         }
 
@@ -62,12 +62,12 @@ namespace MyFirstMauiApp.API.Business.Services
 
             // Armar la respuesta final usando el ID que nos dio la BD
             return new ProductResponseDto(
-                Id = newId,
-                Name = entity.Name,
-                Description = entity.Description,
-                Price = entity.Price,
-                Stock = entity.Stock,
-                CreatedAt = entity.CreatedAt
+                newId,
+                entity.Name,
+                entity.Description,
+                entity.Price,
+                entity.Stock,
+                entity.CreatedAt
             );
         }
 
@@ -90,12 +90,12 @@ namespace MyFirstMauiApp.API.Business.Services
             if (success == null) return null;
                         
             return new ProductResponseDto(
-                Id = success.Id,
-                Name = success.Name,
-                Description = success.Description,
-                Price = success.Price,
-                Stock = success.Stock,
-                CreatedAt = success.CreatedAt
+                success.Id,
+                success.Name,
+                success.Description,
+                success.Price,
+                success.Stock,
+                success.CreatedAt
             );
         }
 
