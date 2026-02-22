@@ -1,6 +1,36 @@
 @MyFirstMauiApp.API_HostAddress = http://localhost:5277
 
-GET {{MyFirstMauiApp.API_HostAddress}}/weatherforecast/
+### 1. Obtener todos los productos
+GET {{MyFirstMauiApp.API_HostAddress}}/api/products
 Accept: application/json
 
-###
+### 2. Obtener un producto específico por ID
+# Cambia el '1' por un ID que exista en tu base de datos
+GET {{MyFirstMauiApp.API_HostAddress}}/api/products/1
+Accept: application/json
+
+### 3. Crear un nuevo producto
+POST {{MyFirstMauiApp.API_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Monitor Gamer 144hz",
+  "description": "24 pulgadas Full HD IPS",
+  "price": 199.99,
+  "stock": 15
+}
+
+### 4. Actualizar un producto existente
+PUT {{MyFirstMauiApp.API_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Monitor Gamer UltraWide",
+  "description": "34 pulgadas Curvo",
+  "price": 350.00,
+  "stock": 5
+}
+
+### 5. Eliminar un producto
+DELETE {{MyFirstMauiApp.API_HostAddress}}/api/products/1
