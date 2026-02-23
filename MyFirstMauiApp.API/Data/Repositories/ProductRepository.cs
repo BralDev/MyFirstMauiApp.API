@@ -6,12 +6,12 @@ using System.Data;
 
 namespace MyFirstMauiApp.API.Data.Repositories
 {
-    // Heredamos de la interfaz IProductRepository
+    // Heredamos de la interfaz IProductRepository.
     public class ProductRepository : IProductRepository
     {
         private readonly DbConnectionFactory _connectionFactory;
 
-        // Inyección de dependencias: Pedimos el factory que registramos en Program.cs
+        // Inyección de dependencias: Pedimos el factory que registramos en Program.cs.
         public ProductRepository(DbConnectionFactory connectionFactory)
         {
             _connectionFactory = connectionFactory;
@@ -19,10 +19,10 @@ namespace MyFirstMauiApp.API.Data.Repositories
 
         public async Task<IEnumerable<Product>> GetAllAsync()
         {
-            // Abrimos la conexión, using la cerrará automaticamente al terminar
+            // Abrimos la conexión, using la cerrará automaticamente al terminar.
             using var connection = _connectionFactory.CreateConnection();
-        
-            // Dapper ejecuta el procedimiento y mapea cada fila de SQL Server a un objeto Product de C#           
+
+            // Ejecuta el SP de forma asíncrona y realiza el mapeo automático.
             return await connection.QueryAsync<Product>(
                 "sp_Product_GetAll",
                 commandType: CommandType.StoredProcedure);
